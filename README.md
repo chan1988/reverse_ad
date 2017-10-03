@@ -1,7 +1,8 @@
 A minimalistic example of reverse-mode automatic differentiation
 imitating the PyTorch interface. We create a bunch of `Variable`
-objects, do simple operations with them then and call `.backward()` to
-compute the gradient components, accessible via `.grad`:
+objects, do simple operations with them and then and call
+`.backward()` to compute the gradient components, accessible via
+`.grad`:
 
 ```python
 x1 = Variable(1.0)
@@ -17,6 +18,6 @@ y = b1-b2
 
 y.backward()
 
-# -2.0 4.0`
+# -2.0 4.0
 print x1.grad, x2.grad
 ```
