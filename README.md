@@ -1,4 +1,4 @@
-A minimalistic example of reverse-mode automatic differentiation
+A minimal example of reverse-mode automatic differentiation
 imitating the PyTorch interface. We create a bunch of `Variable`
 objects, do simple operations with them and then and call
 `.backward()` to compute the gradient components, accessible via
